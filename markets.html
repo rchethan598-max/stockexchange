@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexchange - Markets</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- Main Navigation Header -->
+    <header>
+        <div class="container nav-container">
+            <div class="logo-group">
+                <div class="logo-icon">N</div>
+                <div class="logo-text">
+                    <h1>NEXCHANGE</h1>
+                    <span>STOCK EXCHANGE</span>
+                </div>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="markets.html" class="active">Markets</a>
+                <a href="stocks.html">Stocks</a>
+                <a href="news.html">News</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="watchlist.html">Watchlist</a>
+                <a href="ipo.html">IPO</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="icon-btn" aria-label="Search">🔍</button>
+                <button class="icon-btn" aria-label="Notifications">🔔</button>
+                <button class="icon-btn" aria-label="Profile">👤</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Layout Content -->
+    <main class="container">
+        
+        <!-- Page Header -->
+        <section class="hero-section">
+            <div class="market-intro" style="background: linear-gradient(135deg, #0e1e38 0%, #152b4f 100%); padding: 2rem; border-radius: 0.75rem; border: 1px solid var(--color-border);">
+                <h2>Markets Overview</h2>
+                <p>Monitor indices, view cross-market stats, and analyze current industry sector distributions.</p>
+            </div>
+        </section>
+
+        <!-- Markets Grid Layout -->
+        <section class="main-dashboard-grid">
+            
+            <!-- Primary Column: Indices Breakdown -->
+            <div>
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Global & Domestic Indices</h3>
+                    </div>
+                    <table class="stock-table">
+                        <thead>
+                            <tr>
+                                <th>Index Name</th>
+                                <th>Value</th>
+                                <th>Change (%)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="stock-name">NIFTY 50</td>
+                                <td>24,567.35</td>
+                                <td class="up">+1.25%</td>
+                            </tr>
+                            <tr>
+                                <td class="stock-name">SENSEX</td>
+                                <td>80,458.13</td>
+                                <td class="up">+1.08%</td>
+                            </tr>
+                            <tr>
+                                <td class="stock-name">BANK NIFTY</td>
+                                <td>52,345.80</td>
+                                <td class="down">-0.45%</td>
+                            </tr>
+                            <tr>
+                                <td class="stock-name">NIFTY NEXT 50</td>
+                                <td>72,110.45</td>
+                                <td class="up">+0.88%</td>
+                            </tr>
+                            <tr>
+                                <td class="stock-name">NIFTY MIDCAP 100</td>
+                                <td>54,320.10</td>
+                                <td class="up">+1.42%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Market Heatmap Context Linkage -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Sector Summary Heatmap</h3>
+                    </div>
+                    <div class="heatmap-grid">
+                        <div class="heatmap-cell gain-high">INFRA<br>+2.80%</div>
+                        <div class="heatmap-cell gain-mid">AUTO<br>+1.15%</div>
+                        <div class="heatmap-cell loss-mid">BANKING<br>-0.30%</div>
+                        <div class="heatmap-cell loss-high">PHARMA<br>-1.95%</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Secondary Column: Market Statistics -->
+            <div>
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Market Breadth</h3>
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 1rem; margin-top: 0.5rem;">
+                        <div style="display: flex; justify-content: space-between; font-size: 0.9rem;">
+                            <span style="color: var(--color-text-muted);">Advances</span>
+                            <span class="up" style="font-weight: 600;">1,420 Stocks</span>
+                        </div>
+                        <div style="height: 6px; background: #1f293d; border-radius: 3px; overflow: hidden; display: flex;">
+                            <div style="width: 65%; background: var(--color-success);"></div>
+                            <div style="width: 35%; background: var(--color-danger);"></div>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; font-size: 0.9rem;">
+                            <span style="color: var(--color-text-muted);">Declines</span>
+                            <span class="down" style="font-weight: 600;">764 Stocks</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Institutional Activity</h3>
+                    </div>
+                    <table class="stock-table">
+                        <thead>
+                            <tr>
+                                <th>Category</th>
+                                <th>Net Value (Cr)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="stock-name">FII / FPI</td>
+                                <td class="up">+1,245.80</td>
+                            </tr>
+                            <tr>
+                                <td class="stock-name">DII</td>
+                                <td class="down">-432.15</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Mobile Footer Navigation -->
+    <nav class="mobile-nav">
+        <a href="index.html" class="mobile-nav-item">
+            <span class="mobile-nav-icon">🏠</span>
+            <span>Home</span>
+        </a>
+        <a href="markets.html" class="mobile-nav-item active">
+            <span class="mobile-nav-icon">📊</span>
+            <span>Markets</span>
+        </a>
+        <a href="watchlist.html" class="mobile-nav-item">
+            <span class="mobile-nav-icon">⭐</span>
+            <span>Watchlist</span>
+        </a>
+        <a href="portfolio.html" class="mobile-nav-item">
+            <span class="mobile-nav-icon">💼</span>
+            <span>Portfolio</span>
+        </a>
+    </nav>
+
+</body>
+</html>

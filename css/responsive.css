@@ -1,0 +1,84 @@
+/* --- TABLET VIEW (768px TO 1024px) --- */
+@media (max-width: 1024px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .main-dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cta-banner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+    
+    .cta-mockup {
+        display: none;
+    }
+}
+
+/* --- MOBILE VIEW (320px TO 767px) --- */
+@media (max-width: 767px) {
+    header {
+        position: relative;
+    }
+
+    .nav-links {
+        display: none; /* Collapses into mobile icon view */
+    }
+
+    .indices-grid {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+
+    .hero-section {
+        padding: 1.25rem 0;
+    }
+
+    .hero-grid {
+        gap: 0.75rem;
+    }
+
+    .heatmap-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Bottom mobile navigation setup */
+    .mobile-nav {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: var(--color-bg-card);
+        border-top: 1px solid var(--color-border);
+        justify-content: space-around;
+        padding: 0.75rem 0;
+        z-index: 1000;
+    }
+
+    .mobile-nav-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 0.7rem;
+        color: var(--color-text-muted);
+    }
+
+    .mobile-nav-item.active {
+        color: var(--color-primary);
+    }
+
+    .mobile-nav-icon {
+        font-size: 1.2rem;
+        margin-bottom: 0.2rem;
+    }
+
+    /* Add space at bottom of viewport to account for navigation bar */
+    body {
+        padding-bottom: 60px;
+    }
+}

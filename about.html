@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexchange - About Us</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <div class="logo-group">
+                <div class="logo-icon">N</div>
+                <div class="logo-text">
+                    <h1>NEXCHANGE</h1>
+                    <span>STOCK EXCHANGE</span>
+                </div>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="markets.html">Markets</a>
+                <a href="stocks.html">Stocks</a>
+                <a href="news.html">News</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="watchlist.html">Watchlist</a>
+                <a href="ipo.html">IPO</a>
+                <a href="about.html" class="active">About Us</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="icon-btn" aria-label="Search">🔍</button>
+                <button class="icon-btn" aria-label="Notifications">🔔</button>
+                <button class="icon-btn" aria-label="Profile">👤</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container" style="padding-top: 2rem;">
+        <section class="hero-section" style="padding: 0 0 1.5rem 0;">
+            <div class="market-intro">
+                <h2>Corporate Profile</h2>
+                <p>Learn about our execution engines, compliance criteria, and primary market systems.</p>
+            </div>
+        </section>
+
+        <section class="main-dashboard-grid" style="grid-template-columns: 1fr;">
+            <div class="card">
+                <h3 style="font-family: var(--font-heading); margin-bottom: 0.75rem;">Next Generation Liquidity</h3>
+                <p style="color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem;">
+                    Nexchange operates a high-frequency trading matching engine designed to process multiple executions per second. Built under strict security guidelines, our network aims to guarantee absolute system uptime for wholesale market entities, financial asset brokers, and everyday private participants alike[cite: 1].
+                </p>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                    <div style="background-color: rgba(255,255,255,0.02); padding: 1rem; border-radius: 0.5rem; border: 1px solid var(--color-border);">
+                        <div style="font-size: 1.5rem; font-weight: 700; color: var(--color-primary);">Zero</div>
+                        <div style="font-size: 0.8rem; color: var(--color-text-muted);">External Framework Dependencies[cite: 1]</div>
+                    </div>
+                    <div style="background-color: rgba(255,255,255,0.02); padding: 1rem; border-radius: 0.5rem; border: 1px solid var(--color-border);">
+                        <div style="font-size: 1.5rem; font-weight: 700; color: var(--color-primary);">100%</div>
+                        <div style="font-size: 0.8rem; color: var(--color-text-muted);">Responsive Module Architecture[cite: 1]</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <nav class="mobile-nav">
+        <a href="index.html" class="mobile-nav-item">
+            <span class="mobile-nav-icon">🏠</span>
+            <span>Home</span>
+        </a>
+        <a href="markets.html" class="mobile-nav-item">
+            <span class="mobile-nav-icon">📊</span>
+            <span>Markets</span>
+        </a>
+        <a href="watchlist.html" class="mobile-nav-item">
+            <span class="mobile-nav-icon">⭐</span>
+            <span>Watchlist</span>
+        </a>
+        <a href="portfolio.html" class="mobile-nav-item">
+            <span class="mobile-nav-icon">💼</span>
+            <span>Portfolio</span>
+        </a>
+    </nav>
+</body>
+</html>

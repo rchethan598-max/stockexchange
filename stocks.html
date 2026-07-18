@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexchange - Stocks</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        /* Specific page-level styling for the filter tabs */
+        .filter-tabs {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid var(--color-border);
+            padding-bottom: 0.75rem;
+        }
+        .tab-btn {
+            background: transparent;
+            border: none;
+            color: var(--color-text-muted);
+            font-size: 0.9rem;
+            font-weight: 500;
+            padding: 0.25rem 0.5rem;
+            cursor: pointer;
+            position: relative;
+        }
+        .tab-btn.active {
+            color: var(--color-primary);
+            font-weight: 600;
+        }
+        .tab-btn.active::after {
+            content: '';
+            position: absolute;
+            bottom: -0.85rem;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background-color: var(--color-primary);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Navigation Header -->
+    <header>
+        <div class="container nav-container">
+            <div class="logo-group">
+                <div class="logo-icon">N</div>
+                <div class="logo-text">
+                    <h1>NEXCHANGE</h1>
+                    <span>STOCK EXCHANGE</span>
+                </div>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="markets.html">Markets</a>
+                <a href="stocks.html" class="active">Stocks</a>
+                <a href="news.html">News</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="watchlist.html">Watchlist</a>
+                <a href="ipo.html">IPO</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="icon-btn" aria-label="Search">🔍</button>
+                <button class="icon-btn" aria-label="Notifications">🔔</button>
+                <button class="icon-btn" aria-label="Profile">👤</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Layout Content -->
+    <main class="container" style="padding-top: 2rem;">
+        
+        <!-- Page Overview Header -->
+        <section class="hero-section" style="padding: 0 0 1.5rem 0;">
+            <div class="market-intro">
+                <h2>Stocks Performance</h2>
+                <p>Track equities, historical day metrics, and volume leaders listed across the exchange.</p>
+            </div>
+        </section>
+
+        <!-- Main Dashboard Table Layout -->
+        <section class="main-dashboard-grid" style="grid-template-columns: 1fr;">
+            <div class="card">
+                
+                <!-- Filter Tabs mimicking the design mockups -->
+                <div class="filter-tabs">
+                    <button class="tab-btn active">Top Gainers</button>
+                    <button class="tab-btn">Top Losers</button>
+                    <button class="tab-btn">Most Active</button>
+                </div>
+
+                <!-- Comprehensive Equity List -->
+                <table class="stock-table">
+                    <thead>
+                        <tr>
+                            <th>Company Symbol</th>
+                            <th>Current Price</th>
+                            <th>Net Change</th>
+                            <th>High / Low (Day)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="stock-name">TATA MOTORS</td>
+                            <td>1,024.25</td>
+                            <td class="up">+3.48%</td>
+                            <td style="color: var(--color-text-muted); font-size: 0.85rem;">1,032.00 / 998.10</td>
+                        </tr>
+                        <tr>
+                            <td class="stock-name">RELIANCE INDUSTRIES</td>
+                            <td>2,478.10</td>
+                            <td class="up">+2.30%</td>
+                            <td style="color: var(--color-text-muted); font-size: 0.85rem;">2,510.00 / 2,460.05</td>
+                        </tr>
+                        <tr>
+                            <td class="stock-name">INFOSYS LTD</td>
+                            <td>1,354.00</td>
+                            <td class="up">+1.85%</td>
+                            <td style="color: var(--color-text-muted); font-size: 0.85rem;">1,365.40 / 1,341.00</td>
+                        </tr>
+                        <tr>
+                            <td class="stock-name">TITAN COMPANY</td>
+                            <td>3,120.40</td>
+                            <td class="down">-1.55%</td>
+                            <td style="color: var(--color-text-muted); font-size: 0.85rem;">3,185.00 / 3,111.20</td>
+                        </tr>
+                        <tr>
+                            <td class="stock-name">HDFC BANK</td>
+                            <td>1,688.70</td>
+                            <td class="up">+1.22%</td>
+                            <td style="color: var(--color-text-muted); font-size: 0.85rem;">1,695.00 / 1,662.30</td>
+                        </tr>
+                        <tr>
+                            <td class="stock-name">ICICI BANK</td>
+                            <td>985.00</td>
+                            <td class="up">+0.95%</td>
+                            <td style="color: var(--color-text-muted); font-size: 0.85rem;">992.40 / 976.10</td>
+                        </tr>
+                        <tr>
+                            <td class="stock-name">WIPRO LTD</td>
+                            <td>408.30</td>
+                            <td class="down">-2.10%</td>
+                            <td style="color: var(--color-text-muted); font-size: 0.85rem;">418.00 / 405.60</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <!-- Mobile Navigation Bar -->
+    <nav class="mobile-nav">
+        <a href="index.html" class="mobile-nav-item">
+            <span class="mobile-nav-icon">🏠</span>
+            <span>Home</span>
+        </a>
+        <a href="markets.html" class="mobile-nav-item">
+            <span class="mobile-nav-icon">📊</span>
+            <span>Markets</span>
+        </a>
+        <a href="watchlist.html" class="mobile-nav-item">
+            <span class="mobile-nav-icon">⭐</span>
+            <span>Watchlist</span>
+        </a>
+        <a href="portfolio.html" class="mobile-nav-item">
+            <span class="mobile-nav-icon">💼</span>
+            <span>Portfolio</span>
+        </a>
+    </nav>
+
+</body>
+</html>

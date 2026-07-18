@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexchange - Stock Exchange</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- Main Navigation Header -->
+    <header>
+        <div class="container nav-container">
+            <div class="logo-group">
+                <div class="logo-icon">N</div>
+                <div class="logo-text">
+                    <h1>NEXCHANGE</h1>
+                    <span>STOCK EXCHANGE</span>
+                </div>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="markets.html">Markets</a>
+                <a href="stocks.html">Stocks</a>
+                <a href="news.html">News</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="watchlist.html">Watchlist</a>
+                <a href="ipo.html">IPO</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="icon-btn" aria-label="Search">🔍</button>
+                <button class="icon-btn" aria-label="Notifications">🔔</button>
+                <button class="icon-btn" aria-label="Profile">👤</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Layout Content -->
+    <main class="container">
+        
+        <!-- Market Today Banner & Indices -->
+        <section class="hero-section">
+            <div class="hero-grid">
+                <div class="market-intro">
+                    <h2>Market Today</h2>
+                    <p>Track real-time market movements and trends.</p>
+                    <a href="markets.html" class="btn btn-primary">Expand Markets</a>
+                </div>
+                <div class="indices-grid">
+                    <!-- Nifty 50 -->
+                    <div class="index-card">
+                        <div class="index-header">
+                            <span class="index-name">NIFTY 50</span>
+                            <span class="index-change up">+1.25%</span>
+                        </div>
+                        <div>
+                            <div class="index-val">24,567.35</div>
+                            <!-- Static SVGs for professional real-time feel -->
+                            <svg class="sparkline" viewBox="0 0 100 30">
+                                <path d="M 0,25 Q 25,5 50,20 T 100,5" fill="none" stroke="#10B981" stroke-width="2"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <!-- Sensex -->
+                    <div class="index-card">
+                        <div class="index-header">
+                            <span class="index-name">SENSEX</span>
+                            <span class="index-change up">+1.08%</span>
+                        </div>
+                        <div>
+                            <div class="index-val">80,458.13</div>
+                            <svg class="sparkline" viewBox="0 0 100 30">
+                                <path d="M 0,20 Q 25,15 50,25 T 100,10" fill="none" stroke="#10B981" stroke-width="2"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <!-- Bank Nifty -->
+                    <div class="index-card">
+                        <div class="index-header">
+                            <span class="index-name">BANK NIFTY</span>
+                            <span class="index-change down">-0.45%</span>
+                        </div>
+                        <div>
+                            <div class="index-val">52,345.80</div>
+                            <svg class="sparkline" viewBox="0 0 100 30">
+                                <path d="M 0,10 Q 25,25 50,15 T 100,28" fill="none" stroke="#EF4444" stroke-width="2"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dashboard Layout Grid -->
+        <section class="main-dashboard-grid">
+            
+            <!-- Left Side Dashboard Modules -->
+            <div>
+                <!-- Top Gainers -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Top Gainers</h3>
+                        <a href="stocks.html" class="view-all">View All</a>
+                    </div>
+                    <table class="stock-table">
+                        <thead>
+                            <tr>
+                                <th>Symbol</th>
+                                <th>Price</th>
+                                <th>Change</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="stock-name">TATA MOTORS</td>
+                                <td>1,024.25</td>
+                                <td class="up">+3.48%</td>
+                            </tr>
+                            <tr>
+                                <td class="stock-name">RELIANCE</td>
+                                <td>2,478.10</td>
+                                <td class="up">+2.30%</td>
+                            </tr>
+                            <tr>
+                                <td class="stock-name">INFOSYS</td>
+                                <td>1,354.00</td>
+                                <td class="up">+1.85%</td>
+                            </tr>
+                            <tr>
+                                <td class="stock-name">HDFC BANK</td>
+                                <td>1,688.70</td>
+                                <td class="up">+1.22%</td>
+                            </tr>
+                            <tr>
+                                <td class="stock-name">ICICI BANK</td>
+                                <td>985.00</td>
+                                <td class="up">+0.95%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Market Heatmap -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Market Heatmap</h3>
+                    </div>
+                    <div class="heatmap-grid">
+                        <div class="heatmap-cell gain-high">RELIANCE<br>+2.30%</div>
+                        <div class="heatmap-cell gain-mid">TCS<br>+1.20%</div>
+                        <div class="heatmap-cell loss-mid">HDFC BANK<br>-0.55%</div>
+                        <div class="heatmap-cell loss-high">INFOSYS<br>-2.45%</div>
+                        <div class="heatmap-cell gain-mid">ITC<br>+0.45%</div>
+                        <div class="heatmap-cell loss-mid">WIPRO<br>-1.05%</div>
+                        <div class="heatmap-cell loss-high">BPCL<br>-2.15%</div>
+                        <div class="heatmap-cell gain-high">TITAN<br>+3.20%</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side Dashboard Modules -->
+            <div>
+                <!-- Top Losers -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Top Losers</h3>
+                        <a href="stocks.html" class="view-all">View All</a>
+                    </div>
+                    <table class="stock-table">
+                        <thead>
+                            <tr>
+                                <th>Symbol</th>
+                                <th>Price</th>
+                                <th>Change</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="stock-name">BPCL</td>
+                                <td>302.45</td>
+                                <td class="down">-3.80%</td>
+                            </tr>
+                            <tr>
+                                <td class="stock-name">WIPRO</td>
+                                <td>408.30</td>
+                                <td class="down">-2.10%</td>
+                            </tr>
+                            <tr>
+                                <td class="stock-name">TITAN</td>
+                                <td>3,120.40</td>
+                                <td class="down">-1.55%</td>
+                            </tr>
+                            <tr>
+                                <td class="stock-name">ONGC</td>
+                                <td>248.75</td>
+                                <td class="down">-1.20%</td>
+                            </tr>
+                            <tr>
+                                <td class="stock-name">COAL INDIA</td>
+                                <td>385.10</td>
+                                <td class="down">-0.98%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Market News -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Market News</h3>
+                        <a href="news.html" class="view-all">View All</a>
+                    </div>
+                    <div class="news-feed">
+                        <div class="news-item">
+                            <div class="news-img">📈</div>
+                            <div class="news-content">
+                                <h4>Sensex rises 600 points in early trade; Nifty above 24,500</h4>
+                                <span class="news-meta">Economic Times • 2 hrs ago</span>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <div class="news-img">🏦</div>
+                            <div class="news-content">
+                                <h4>RBI keeps repo rate unchanged, focuses on inflation</h4>
+                                <span class="news-meta">Moneycontrol • 5 hrs ago</span>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <div class="news-img">🌐</div>
+                            <div class="news-content">
+                                <h4>Global markets trade mixed ahead of US inflation data</h4>
+                                <span class="news-meta">Reuters • 8 hrs ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Banner -->
+        <section class="cta-banner">
+            <div class="cta-text">
+                <h3>Open a Demat Account Today!</h3>
+                <p>Start investing in Stocks, Mutual Funds, and IPOs seamlessly with Nexchange.</p>
+                <button class="btn btn-primary">Open Account</button>
+            </div>
+            <!-- Native CSS illustration of Desktop/Dashboard Mockup -->
+            <div class="cta-mockup"></div>
+        </section>
+    </main>
+
+    <!-- Mobile Footer Navigation -->
+    <nav class="mobile-nav">
+        <a href="index.html" class="mobile-nav-item active">
+            <span class="mobile-nav-icon">🏠</span>
+            <span>Home</span>
+        </a>
+        <a href="markets.html" class="mobile-nav-item">
+            <span class="mobile-nav-icon">📊</span>
+            <span>Markets</span>
+        </a>
+        <a href="watchlist.html" class="mobile-nav-item">
+            <span class="mobile-nav-icon">⭐</span>
+            <span>Watchlist</span>
+        </a>
+        <a href="portfolio.html" class="mobile-nav-item">
+            <span class="mobile-nav-icon">💼</span>
+            <span>Portfolio</span>
+        </a>
+    </nav>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexchange - Watchlist</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <div class="logo-group">
+                <div class="logo-icon">N</div>
+                <div class="logo-text">
+                    <h1>NEXCHANGE</h1>
+                    <span>STOCK EXCHANGE</span>
+                </div>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="markets.html">Markets</a>
+                <a href="stocks.html">Stocks</a>
+                <a href="news.html">News</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="watchlist.html" class="active">Watchlist</a>
+                <a href="ipo.html">IPO</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="icon-btn" aria-label="Search">🔍</button>
+                <button class="icon-btn" aria-label="Notifications">🔔</button>
+                <button class="icon-btn" aria-label="Profile">👤</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container" style="padding-top: 2rem;">
+        <section class="hero-section" style="padding: 0 0 1.5rem 0;">
+            <div class="market-intro">
+                <h2>Custom Watchlist</h2>
+                <p>Pin selected corporate equities and index counters to track real-time volatility margins.</p>
+            </div>
+        </section>
+
+        <section class="main-dashboard-grid" style="grid-template-columns: 1fr;">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Monitored Assets</h3>
+                </div>
+                <table class="stock-table">
+                    <thead>
+                        <tr>
+                            <th>Symbol</th>
+                            <th>Market Price</th>
+                            <th>Day Change</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="stock-name">INFOSYS</td>
+                            <td>1,354.00</td>
+                            <td class="up">+1.85%</td>
+                            <td><button style="background: transparent; border: none; color: var(--color-danger); cursor: pointer;">✕ Remove</button></td>
+                        </tr>
+                        <tr>
+                            <td class="stock-name">HDFC BANK</td>
+                            <td>1,688.70</td>
+                            <td class="up">+1.22%</td>
+                            <td><button style="background: transparent; border: none; color: var(--color-danger); cursor: pointer;">✕ Remove</button></td>
+                        </tr>
+                        <tr>
+                            <td class="stock-name">WIPRO</td>
+                            <td>408.30</td>
+                            <td class="down">-2.10%</td>
+                            <td><button style="background: transparent; border: none; color: var(--color-danger); cursor: pointer;">✕ Remove</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <nav class="mobile-nav">
+        <a href="index.html" class="mobile-nav-item">
+            <span class="mobile-nav-icon">🏠</span>
+            <span>Home</span>
+        </a>
+        <a href="markets.html" class="mobile-nav-item">
+            <span class="mobile-nav-icon">📊</span>
+            <span>Markets</span>
+        </a>
+        <a href="watchlist.html" class="mobile-nav-item active">
+            <span class="mobile-nav-icon">⭐</span>
+            <span>Watchlist</span>
+        </a>
+        <a href="portfolio.html" class="mobile-nav-item">
+            <span class="mobile-nav-icon">💼</span>
+            <span>Portfolio</span>
+        </a>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap');
+
+:root {
+    /* Color Palette */
+    --color-bg-dark: #081328;
+    --color-bg-card: #0e1e38;
+    --color-bg-light: #f3f4f6;
+    --color-primary: #10B981;       /* Light Green accent */
+    --color-success: #10B981;       /* Gainers */
+    --color-success-bg: rgba(16, 185, 129, 0.15);
+    --color-danger: #EF4444;        /* Losers */
+    --color-danger-bg: rgba(239, 68, 68, 0.15);
+    --color-text-white: #ffffff;
+    --color-text-muted: #9CA3AF;
+    --color-text-dark: #111827;
+    --color-border: #1f293d;
+
+    /* Typography */
+    --font-primary: 'Inter', sans-serif;
+    --font-heading: 'Poppins', sans-serif;
+
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+}
